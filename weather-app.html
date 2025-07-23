@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Weather App</title>
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="weather-container">
+      <header class="search-container">
+        <form>
+          <input
+            type="text"
+            placeholder="Search your city..."
+            required
+            class="text-input"
+            id="text-input"
+          />
+          <input
+            type="submit"
+            value="Search"
+            class="search-input"
+            id="search-input"
+          />
+        </form>
+      </header>
+      <main class="current-weather">
+        <div>
+          <h1 class="current-city" id="current-city">Thohoyandou</h1>
+          <p class="current-weather-info">
+            <span id="current-date"></span>, Sunny <br />
+            Humidity: <strong>60%</strong> ,Wind: <strong>18km/h</strong>
+          </p>
+        </div>
+        <div class="current-temperature">
+          <span class="current-temperature-icon">🌞</span
+          ><span
+            class="current-temperature-value"
+            id="current-temperature-value"
+            ><strong>25</strong></span
+          ><span class="current-temperature-degree">&deg;C</span>
+        </div>
+      </main>
+      <ul class="weather-forecast">
+        <li>
+          Mon☀️ <br />
+          <strong>14&deg;</strong> 29&deg;
+        </li>
+        <li>
+          Tues☁️ <br />
+          <strong>13&deg;</strong> 28&deg;
+        </li>
+        <li>
+          Wed⛅ <br />
+          <strong>12&deg;</strong> 22&deg;
+        </li>
+        <li>
+          Thu🌤️ <br />
+          <strong>11&deg;</strong> 23&deg;
+        </li>
+        <li>
+          Fri🌧️ <br />
+          <strong>13&deg;</strong> 15&deg;
+        </li>
+      </ul>
+      <footer>
+        <p>
+          Coded with 💗by
+          <a href="#" target="_blank"> Lifasi Muavha</a> and is
+          <a href="#" target="_blank"> on GitHub</a> and hosted on
+          <a href="#" target="_blank"> Netlify</a>
+        </p>
+      </footer>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>
